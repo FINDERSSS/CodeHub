@@ -3,6 +3,58 @@
 <head>
     <link rel="stylesheet" href="Styles.css">
     <title>Test Site!</title>
+    <style>
+/* animations */
+@keyframes RotateTitleText {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg); /* Rotate right */
+    }
+}
+
+/* Title Heading's */
+.TitleText, .TitleText2 {
+    display: inline-block;
+    font-family: 'code', cursive;
+    margin: 10px;
+    padding: 5px;
+    font-size: .75in;
+    color: black;
+}
+
+
+.TitleText2 {
+    font-size: .75in;
+    color: lime;
+}
+
+/* Divs */
+.Container {
+    background-color: rgb(54, 54, 54);
+    width: 22%;
+    margin: 0% auto;
+    border-radius: 15px;
+    text-align: center;
+    animation: RotateTitleText 2s linear infinite alternate;
+    
+}
+
+/*description*/
+.AboutCodeHub {
+    font-family: 'code', cursive; 
+    font-size: .25in;
+    color: white;
+    text-align: center;
+    margin: 35px auto;
+    width: 35%;
+}
+
+body {  
+    background-color: rgb(68, 68, 68);
+}
+</style>
 </head>
 <body>
     <header>
