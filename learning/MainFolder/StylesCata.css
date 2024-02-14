@@ -1,0 +1,125 @@
+@keyframes RotateTitleText {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg); /* Rotate right */
+    }
+}
+
+.NothingToSee {
+    font-family: 'code', cursive;
+    font-size: .25in;
+    color: white;
+    text-align: center;
+    margin: 150px auto;
+    width: 30%;
+    background-color: rgb(54, 54, 54);
+    border-radius: 15px;
+    height: 250px;
+    text-transform: uppercase;
+}
+
+.NothingToSee h1 {
+    padding: 10%;
+}
+
+.TitleText, .TitleText2 {
+    display: inline-block;
+    font-family: 'code', cursive;
+    margin: 10px;
+    padding: 5px;
+    font-size: .75in;
+    color: black;
+    
+}
+
+.TitleText2 {
+    font-size: .75in;
+    color: lime;
+}
+
+.TitleText3 {
+    font-family: 'code', cursive;
+    font-size: .50in;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.HtmlTextContainer {
+    background-color: rgb(54, 54, 54);
+    width: 10%;
+    margin: 0% auto;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.Container {
+    background-color: rgb(54, 54, 54);
+    width: 23%;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: center;
+    animation: RotateTitleText 2s linear infinite alternate;
+    padding: 10px;
+}
+
+header button {
+    font-family: 'code', cursive;
+    background-color: rgb(54, 54, 54);
+    width: 125px;
+    color: white;
+    font-size: .15in;
+    outline: auto;
+    margin: 25px auto;
+    display: block;
+    text-align: center;
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body {      
+    background-color: rgb(68, 68, 68);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex: 1;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 6px;
+}
